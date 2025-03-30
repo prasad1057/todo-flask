@@ -5,7 +5,7 @@ FROM python:3
 WORKDIR /app
 
 # Install dependencies
-RUN pip install Flask SQLAlchemy
+RUN pip install --no-cache-dir Flask-SQLAlchemy
 
 # Copy project files
 COPY . .
